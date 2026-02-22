@@ -1,16 +1,12 @@
 @Library('shared-library@main')
 @Library('shared-library1@main')
 pipeline {
-
     agent any
-
     tools {
         maven 'maven399'
     }
-
     stages 
     {
-
         stage('Build') 
         {
             steps 
@@ -23,28 +19,32 @@ pipeline {
             steps 
             {
                 script
-                {
-                rajPrint()
-                rajPrint.benjicall()
-                }
+                    {
+                    rajPrint()
+                    rajPrint.benjicall()
+                    }        
             }
         }
     }
-    post {
+    post 
+    {
 
-        success {
-            script {
+        success 
+        {
+            script 
+            {
                 emailNotification.successEmail()
             }
         }
 
-        failure {
-            script {
+        failure 
+        {
+            script 
+            {
                 emailNotification.failureEmail()
             }
         }
 
     }
 }
-
 
