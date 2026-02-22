@@ -1,5 +1,4 @@
 @Library('shared-library@main')
-@Library('shared-library1@main')
 pipeline
 {
     agent any
@@ -14,17 +13,6 @@ pipeline
             steps 
             {
                 mavenBuild()
-            }
-        }
-        stage('rajprint') 
-        {
-            steps 
-            {
-                script
-                    {
-                    rajPrint()
-                    rajPrint.benjicall()
-                    }        
             }
         }
     }
