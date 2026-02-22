@@ -21,6 +21,7 @@ pipeline {
                 print()
             }
         }
+        }
         
         stage('Print1') {
             steps {
@@ -46,4 +47,5 @@ pipeline {
 
     }
 }
+
 
