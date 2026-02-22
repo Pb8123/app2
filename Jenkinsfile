@@ -17,11 +17,14 @@ pipeline {
         }
         stage('Print') {
             steps {
+                script{
                 print()
             }
         }
+        
         stage('Print1') {
             steps {
+                script{
                 print.benjicall()
             }
         }
