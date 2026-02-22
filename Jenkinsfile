@@ -1,4 +1,4 @@
-@library('shared-library@main')
+@Library('shared-library@main')
 @Library('shared-library1@main');
 pipeline
 {
