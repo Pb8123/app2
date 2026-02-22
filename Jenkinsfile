@@ -1,5 +1,5 @@
-@Library('shared-library@main') _
-@Library('shared-library1@main') _
+@Library('shared-library@main')
+@Library('shared-library1@main')
 
 pipeline {
 
