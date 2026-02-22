@@ -1,8 +1,10 @@
 @Library('shared-library@main')
 @Library('shared-library1@main')
-pipeline {
+pipeline 
+{
     agent any
-    tools {
+    tools 
+    {
         maven 'maven399'
     }
     stages 
