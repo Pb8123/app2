@@ -18,24 +18,24 @@ pipeline {
                 mavenBuild()
             }
         }
-        stage('Print') 
+        stage('rajprintall') 
         {
             steps 
             {
                 script
                 {
-                print()
+                rajPrint()
                 }
             }
         }
         
-        stage('Print1') 
+        stage('rajprintsingle') 
         {
             steps 
             {
                 script
                 {
-                print.benjicall()
+                rajPrint.benjicall()
                 }
             }
         }
