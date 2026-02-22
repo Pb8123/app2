@@ -1,6 +1,6 @@
-@Library('shared-library@main') 
+@library('shared-library@main')
 @Library('shared-library1@main')
-pipeline 
+pipeline
 {
     agent any
     tools 
