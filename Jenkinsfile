@@ -15,6 +15,16 @@ pipeline {
                 mavenBuild()
             }
         }
+        stage('Print') {
+            steps {
+                print()
+            }
+        }
+        stage('Print1') {
+            steps {
+                print.benjicall()
+            }
+        }
     }
 
     post {
