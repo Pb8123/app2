@@ -8,29 +8,38 @@ pipeline {
         maven 'maven399'
     }
 
-    stages {
+    stages 
+    {
 
-        stage('Build') {
-            steps {
+        stage('Build') 
+        {
+            steps 
+            {
                 mavenBuild()
             }
         }
-        stage('Print') {
-            steps {
-                script{
+        stage('Print') 
+        {
+            steps 
+            {
+                script
+                {
                 print()
+                }
             }
         }
-        }
         
-        stage('Print1') {
-            steps {
-                script{
+        stage('Print1') 
+        {
+            steps 
+            {
+                script
+                {
                 print.benjicall()
+                }
             }
         }
     }
-
     post {
 
         success {
